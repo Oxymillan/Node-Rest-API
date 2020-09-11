@@ -8,15 +8,17 @@ const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
 
+// Connect DB
 mongoose.connect(
-    'mongodb+srv://node-shop:' + 
+    'mongodb+srv://Jin:' + 
     process.env.MONGO_ATLAS_PW + 
-    '@node-rest-shop-tnz3q.mongodb.net/test?retryWrites=true&w=majority', {
+    '@cluster0.gj8uc.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
 mongoose.Promise = global.Promise;
 
+// Parse files with morgan
 app.use(morgan('dev'));
 app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended: false}));

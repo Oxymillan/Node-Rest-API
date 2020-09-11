@@ -1,7 +1,7 @@
 {
   "name": "node-rest-shop",
   "version": "1.0.0",
-  "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
+  "description": "Node.js RESTful API (JWT Auth, )",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

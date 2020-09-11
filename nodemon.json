@@ -1,6 +1,6 @@
 {
     "env": {
-        "MONGO_ATLAS_PW": "node-shop",
+        "MONGO_ATLAS_PW": "123456xyz",
         "JWT_KEY": "secret"
     }
 }
